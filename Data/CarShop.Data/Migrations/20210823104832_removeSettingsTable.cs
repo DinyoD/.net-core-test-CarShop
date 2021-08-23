@@ -1,8 +1,9 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace CarShop.Data.Migrations
+﻿namespace CarShop.Data.Migrations
 {
+    using System;
+
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class removeSettingsTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -24,6 +24,10 @@
         {
         }
 
+        public DbSet<Car> Cars { get; set; }
+
+        public DbSet<Issue> Issues { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
