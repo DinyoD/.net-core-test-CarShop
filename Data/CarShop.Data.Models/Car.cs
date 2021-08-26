@@ -23,10 +23,10 @@
         public int Year { get; set; }
 
         [Required]
-        public string PictureUr { get; set; }
+        public string PictureUrl { get; set; }
 
         [Required]
-        public string PlateNUmber { get; set; }
+        public string PlateNumber { get; set; }
 
         [Required]
         public string OwnerId { get; set; }
