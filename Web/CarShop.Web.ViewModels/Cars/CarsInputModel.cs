@@ -19,7 +19,7 @@
         public string PictureUrl { get; set; }
 
         [Required]
-        [RegularExpression("^[A-B]{2}[0-9]{4}[A-B]{2}$")]
+        [RegularExpression("^[A-Z]{2}[0-9]{4}[A-Z]{2}$")]
         public string PlateNumber { get; set; }
     }
 }

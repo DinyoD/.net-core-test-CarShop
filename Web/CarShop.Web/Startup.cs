@@ -8,6 +8,7 @@
     using CarShop.Data.Models;
     using CarShop.Data.Repositories;
     using CarShop.Data.Seeding;
+    using CarShop.Services.Data;
     using CarShop.Services.Mapping;
     using CarShop.Services.Messaging;
     using CarShop.Web.ViewModels;
@@ -63,7 +64,8 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-
+            services.AddTransient<ICarsService, CarsService>();
+            services.AddTransient<IIssuesService, IssuesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
